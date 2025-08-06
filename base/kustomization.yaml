@@ -4,3 +4,5 @@ kind: Kustomization
 
 resources:
   - http-route.yaml
+  - service-account.yaml
+  - rbac.yaml

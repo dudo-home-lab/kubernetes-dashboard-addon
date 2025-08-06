@@ -61,6 +61,11 @@ kind: HTTPRoute
 metadata:
   name: kubernetes-dashboard-web
   namespace: kubernetes-dashboard
+  annotations:
+    gethomepage.dev/enabled: "true"
+    gethomepage.dev/description: Web-based Kubernetes user interface
+    gethomepage.dev/group: IoT
+    gethomepage.dev/name: Kubernetes Dashboard
 spec:
   parentRefs:
     - group: gateway.networking.k8s.io

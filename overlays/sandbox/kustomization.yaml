@@ -12,18 +12,18 @@ patches:
     patch: |-
       - op: add
         path: /spec/hostnames/-
-        value: "www.dudo.dev"
+        value: "k8s.dudo.dev"
   - target:
       kind: HTTPRoute
       name: kubernetes-dashboard-api
     patch: |-
       - op: add
         path: /spec/hostnames/-
-        value: "www.dudo.dev"
+        value: "k8s.dudo.dev"
   - target:
       kind: HTTPRoute
       name: kubernetes-dashboard-web
     patch: |-
       - op: add
         path: /spec/hostnames/-
-        value: "www.dudo.dev"
+        value: "k8s.dudo.dev"
